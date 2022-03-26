@@ -1,30 +1,62 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
   <router-view/>
 </template>
 
 <style>
+:root {
+  --main-bg-color: #fc8834;
+  --home-bg-section-two: #5b8c79;
+}
+
+@font-face {
+  font-family: "Phagspab";
+  src: local("Phagspab"),
+  url("./assets/fonts/phagspab.ttf") format("truetype");
+}
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+  font-family: "Phagspab", sans-serif;
+  overflow-wrap: break-word;
 }
 
-nav {
-  padding: 30px;
+.button.is-light {
+  background-color: var(--main-bg-color) !important;
+  color: white !important;
 }
 
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
+.button.is-light:hover {
+  filter: brightness(90%) !important;
+  background-color: var(--main-bg-color) !important;
+  color: white !important;
 }
 
-nav a.router-link-exact-active {
-  color: #42b983;
+.news-1 {
+  background-image: url("./assets/images/news/1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 200px;
+}
+
+.columns {
+  margin: 0 !important;
+}
+
+.home-section {
+  background-color: var(--main-bg-color);
+}
+
+.footer {
+  background-color: #0d0f1d !important;
+  color: white !important;
+}
+
+.button {
+  white-space: break-spaces !important;
+}
+
+.no-bg {
+  background-color: #0c306a;
+  height: 15rem;
 }
 </style>
