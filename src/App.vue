@@ -14,6 +14,12 @@
   url("./assets/fonts/phagspab.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "Tahoama";
+  src: local("Tahoama"),
+  url("./assets/fonts/tahoma_regular.ttf") format("truetype");
+}
+
 #app {
   font-family: "Phagspab", sans-serif;
   overflow-wrap: break-word;
@@ -53,10 +59,5 @@
 
 .button {
   white-space: break-spaces !important;
-}
-
-.no-bg {
-  background-color: #0c306a;
-  height: 15rem;
 }
 </style>

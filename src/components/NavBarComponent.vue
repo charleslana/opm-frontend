@@ -11,8 +11,8 @@
       <div class="navbar-start">
         <router-link class="navbar-item navbar-item-custom" to="/">Home</router-link>
         <router-link class="navbar-item navbar-item-custom" to="/news">Notícias</router-link>
-        <a class="navbar-item navbar-item-custom">Hall Da Fama</a>
-        <a class="navbar-item navbar-item-custom">Contato</a>
+        <router-link class="navbar-item navbar-item-custom" to="/hall-of-fame">Hall Da Fama</router-link>
+        <router-link class="navbar-item navbar-item-custom" to="/contact">Contato</router-link>
       </div>
       <div class="navbar-end">
         <div class="navbar-item">

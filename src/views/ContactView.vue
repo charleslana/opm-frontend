@@ -5,10 +5,10 @@
 </template>
 <script>
 import NavBarComponent from "@/components/NavBarComponent";
-import NoBgComponent from "@/components/NoBgComponent";
 import FooterComponent from "@/components/FooterComponent";
+import NoBgComponent from "@/components/NoBgComponent";
 
 export default {
-  components: {FooterComponent, NoBgComponent, NavBarComponent}
+  components: {NoBgComponent, FooterComponent, NavBarComponent}
 }
 </script>
