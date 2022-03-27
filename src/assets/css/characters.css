@@ -1,0 +1,19 @@
+.character-bg {
+    background-image: url("../images/characters/portrait/bg.png");
+    background-repeat: no-repeat;
+    width: 130px;
+    height: 128px;
+}
+
+.character-bg > div {
+    width: 125px;
+    height: 130px;
+    background-position: 5px;
+}
+
+.character-portrait-1 {
+    background-image: url("../images/characters/portrait/1.png");
+    background-repeat: no-repeat;
+    width: 130px;
+    height: 130px;
+}

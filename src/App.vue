@@ -3,6 +3,8 @@
 </template>
 
 <style>
+@import "assets/css/characters.css";
+
 :root {
   --main-bg-color: #fc8834;
   --home-bg-section-two: #5b8c79;
@@ -23,6 +25,7 @@
 #app {
   font-family: "Phagspab", sans-serif;
   overflow-wrap: break-word;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .button.is-light {
@@ -59,5 +62,13 @@
 
 .button {
   white-space: break-spaces !important;
+}
+
+.table-responsive {
+  overflow-x: auto;
+}
+
+td {
+  vertical-align: middle !important;
 }
 </style>

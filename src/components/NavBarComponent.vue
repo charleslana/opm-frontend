@@ -1,6 +1,9 @@
 <template>
   <nav aria-label="main navigation" class="navbar is-fixed-top" role="navigation">
     <div class="navbar-brand">
+      <div class="navbar-item">
+        <div class="logo"></div>
+      </div>
       <a aria-expanded="false" aria-label="menu" class="navbar-burger" data-target="navbarBasicExample" role="button">
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
@@ -61,7 +64,33 @@ import {mountModal} from "@/utils/utils";
 export default {
   mounted() {
     mountModal();
+    this.showBurger();
   },
+  methods: {
+    showBurger() {
+      // Get all "navbar-burger" elements
+      const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+      // Check if there are any navbar burgers
+      if ($navbarBurgers.length > 0) {
+
+        // Add a click event on each of them
+        $navbarBurgers.forEach(el => {
+          el.addEventListener('click', () => {
+
+            // Get the target from the "data-target" attribute
+            const target = el.dataset.target;
+            const $target = document.getElementById(target);
+
+            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+            el.classList.toggle('is-active');
+            $target.classList.toggle('is-active');
+
+          });
+        });
+      }
+    }
+  }
 }
 </script>
 
@@ -96,5 +125,18 @@ export default {
   height: 5.25rem;
   color: white;
   background-color: var(--main-bg-color);
+}
+
+.navbar-menu {
+  background-color: rgb(0, 23, 71, 0.8);
+}
+
+.logo {
+  background-image: url("../assets/images/logo.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain;
+  width: 14rem;
+  height: 4.2rem;
 }
 </style>

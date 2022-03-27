@@ -44,6 +44,12 @@ export default {
   color: white;
 }
 
+@media screen and (max-width: 768px) {
+  .featured-title {
+    background-color: var(--main-bg-color);
+  }
+}
+
 .featured-border {
   border: solid white;
   border-width: 60px 64px 82px 88px;
